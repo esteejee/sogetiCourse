@@ -1,6 +1,21 @@
 public class Assignment01 {
 
     public static void main(String[] args) {
+
+        final String MY_FULL_NAME = "Sjack Jansma";
+        String myString = "Dit is een string";
+        String myNewString = myString +  " Dit was een string " + MY_FULL_NAME;
+        int Lengte = myNewString.length ();
+        System.out.println (Lengte);
+        System.out.println ("Het karakter op index 10 is " + myNewString.charAt (20));
+        String strExample = String.format("My naam is %s en mijn leeftijd %02d","Sjack", 62);
+        System.out.println (strExample);
+        String myStringToInteger = "123456";
+        int myIntFromString = Integer.parseInt (myStringToInteger);
+        String strExample1 = String.valueOf (myIntFromString);
+        System.out.println (strExample1);
+
+        System.out.println (myNewString);
         /*
         * int
         * min -2,147,483,648
