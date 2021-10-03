@@ -24,9 +24,6 @@ public class Assignment04 {
         String myString2 = "   Dit is een opdracht voor de cursus Java Fundamentals  ";
         System.out.println ("String met spaties aan het begin en einde: "  + myString2);
         System.out.println ("dezelfde string zonder de spaties " +  myString2.trim ());
-
-
-
     }
 
 }

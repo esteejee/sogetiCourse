@@ -4,7 +4,7 @@ public class Assignment05 {
         String firstName = "James";
         String lastName = "Dean";
         int age = 24;
-        String strFormat = String.format("The American actor %s %s was %02d years when he died.",firstName,lastName, age);
+        String strFormat = String.format ("The American actor %s %s was %d years when he died.", firstName, lastName, age);
         System.out.println (strFormat);
 
         double dblTemperature = 28.53;
@@ -16,8 +16,6 @@ public class Assignment05 {
         float fltHumidity = Float.parseFloat (strHumidity);
         System.out.println ("String humidity is " + strHumidity);
         System.out.println ("Float humidity is " + fltHumidity);
-
-
     }
 
 }
