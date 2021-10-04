@@ -8,7 +8,6 @@ public class Assignment10 {
                 System.out.println (number + " is an odd number");
             }
         }
-
     }
 }
 
