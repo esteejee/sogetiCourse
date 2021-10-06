@@ -16,8 +16,5 @@ public class Assignment03 {
         System.out.println ("De waarde van myDouble2 is: " + myDouble2);
         System.out.println ("De waarde van myLong2 is: " + myLong2);
         System.out.println ("De waarde van myInt2 is: " + myInt2);
-
-
-
     }
 }
