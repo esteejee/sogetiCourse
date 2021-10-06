@@ -8,7 +8,6 @@ public class Assingment12 {
         System.out.println ("The sum of 10 and 20 is " + result);
     }
 
-
 // a method that prints the message Hello World! to console
     private static void printGreetingMessageToConsole(){
         System.out.println ("Hello World!");
