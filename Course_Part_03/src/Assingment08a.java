@@ -5,8 +5,7 @@ public class Assingment08a {
 
         if (name.equals ("John")) {
             System.out.println ("His name is John");
-        } else if
-        (name.equals ("Doe")) {
+        } else if (name.equals ("Doe")) {
             System.out.println ("His name is Doe");
         } else {
             System.out.println ("His name is neither John nor Doe");

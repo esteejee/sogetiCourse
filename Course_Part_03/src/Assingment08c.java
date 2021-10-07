@@ -6,5 +6,6 @@ public class Assingment08c {
         System.out.println ("Het kleinste getal is " + ((a < b) ? a : b));
         System.out.println ("Het grootste getal is " + ((a > b) ? a : b));
         System.out.println ("De absolute waarde van b is " + ((b > 0) ? b : Math.abs (b)));
+        System.out.println ("De absolute waarde van b is " + ((b > 0) ? b : b * -1));  // geen gebruik van Math.abs
     }
 }

@@ -1,13 +1,9 @@
 public class Assignment16 {
     public static void main(String[] args) {
 
-        for (int i = 2; i <= 100; i++) {
-            boolean result = isPrime (i);
-            if (result) {
-                System.out.println ("The number " + i + " is a prime");
-            } else {
-                System.out.println ("The number " + i + " is not a prime");
-            }
+        for (int i = 1; i <= 100; i++) {
+            String result = isPrime (i) ? "The number " + i + " is a prime" : "The number " + i + " is not a prime";
+            System.out.println (result);
         }
     }
 

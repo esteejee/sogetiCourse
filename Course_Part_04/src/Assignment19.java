@@ -9,11 +9,11 @@ public class Assignment19 {
     }
 
     private static double multiplyDouble(double... numbers) {
-        double sum1 = 1;
+        double sum = 1;
 
         for (double number : numbers) {
-            sum1 *= number;  // multiply the numbers
+            sum *= number;  // multiply the numbers
         }
-        return sum1;
+        return sum;
     }
 }
