@@ -3,6 +3,7 @@ public class Assingment12 {
         printGreetingMessageToConsole ();
         String message = getJavaGreeting ();
         System.out.println ("The greetings is " + message);
+
         printNameToConsole ("John");
         int result = sumOfIntegers (10, 20);
         System.out.println ("The sum of 10 and 20 is " + result);

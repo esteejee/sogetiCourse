@@ -39,6 +39,7 @@ public class Assignment13 {
 
     private static double calculator(double a, double b, String operator) {
 
+
         switch (operator) {
             case "+": {
                 return (a + b);

@@ -1,6 +1,6 @@
 public class Assignment15 {
     public static void main(String[] args) {
-        Character[] characters = {'a','b','f','h','m', 'v', 'q','O', 'E' };
+        Character[] characters = {'a','b','f','h','m', 'u', 'v', 'q','O', 'E' };
 
         for (char chr : characters) {
             boolean result = isVowel(chr);

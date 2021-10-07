@@ -15,6 +15,7 @@ public class Assignment17 {
 
 
     private static boolean isLeap(int year) {
+
         if (year % 4 != 0) {
             return false;
         } else if (year % 400 == 0) {

@@ -10,6 +10,7 @@ public class Assignment19 {
 
     private static double multiplyDouble(double... numbers) {
         double sum1 = 1;
+
         for (double number : numbers) {
             sum1 *= number;  // multiply the numbers
         }
