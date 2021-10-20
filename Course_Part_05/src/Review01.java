@@ -45,6 +45,7 @@ public class Review01 {
 
     private static void printResult(double number1, double number2, String operator, double result) {
 
-        System.out.println ((result < 0) ? String.format ("The calculation %.2f %s %.2f = %.2f -> result is negative", number1, operator, number2, result) : String.format ("The calculation %.2f %s %.2f = %.2f -> result is positive", number1, operator, number2, result));
+        String strResult = ((result < 0) ? "Negative" : "Positive");
+        System.out.println ((String.format ("The calculation %.2f %s %.2f = %.2f -> result is %s", number1, operator, number2, result, strResult)));
     }
 }
