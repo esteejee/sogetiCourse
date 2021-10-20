@@ -31,26 +31,27 @@ public class Assignment13 {
 
         double resultModulus = calculator (1.0, 3.0, "%");
         if (resultModulus != 0.0) {
-            System.out.println ("the modulus of 1 and 3 is " + resultModulus);
+            System.out.println ("The modulus of 1 and 3 is " + resultModulus);
         } else {
-            System.out.println ("unkown operator");
+            System.out.println ("Unsupported operator");
         }
     }
 
     private static double calculator(double a, double b, String operator) {
 
+
         switch (operator) {
             case "+": {
-                return (a + b);
+                return a + b;
             }
             case "-": {
-                return (a - b);
+                return a - b;
             }
             case "*": {
-                return (a * b);
+                return a * b;
             }
             case "/": {
-                return (a / b);
+                return a / b;
             }
             default:
                 return 0.0;
