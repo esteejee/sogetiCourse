@@ -1,13 +1,11 @@
 public class Review01 {
     public static void main(String[] args) {
-        double[] doubleArray = {6.3, 7.8, 5.9};
-        double[] doubleArray2 = {5.7, 7.6, 4.0, 9.8};
-        String[] operator = {"+", "-", "*", "/", "%" };
+        double[] numbersA = {6.3, 7.8, 5.9};
+        double[] numbersB = {5.7, 7.6, 4.0, 9.8};
+        String[] operator = {"+", "-", "*", "/", "%"};
 
-        int result = calculation (doubleArray, doubleArray2, operator);
-
-        System.out.println ("" + result);
-
+        int result = calculation (numbersA, numbersB, operator);
+        System.out.println ("Total number of calculations: " + result);
     }
 
     private static int calculation(double[] numbersA, double[] numbersB, String[] operators) {
@@ -24,7 +22,6 @@ public class Review01 {
         }
         return count;
     }
-
 
     private static double calculator(double a, double b, String operator) {
 
@@ -46,16 +43,8 @@ public class Review01 {
         }
     }
 
-
     private static void printResult(double number1, double number2, String operator, double result) {
 
-        String strResult;
-
-        if (result < 0) {
-            strResult = String.format ("The calculation %.2f %s %.2f = %.2f -> result is negative", number1, operator, number2, result);
-        } else {
-            strResult = String.format ("The calculation %.2f %s %.2f = %.2f -> result is positive", number1, operator, number2, result);
-        }
-        System.out.println (strResult);
+        System.out.println ((result < 0) ? String.format ("The calculation %.2f %s %.2f = %.2f -> result is negative", number1, operator, number2, result) : String.format ("The calculation %.2f %s %.2f = %.2f -> result is positive", number1, operator, number2, result));
     }
 }
