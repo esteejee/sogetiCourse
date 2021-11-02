@@ -1,4 +1,4 @@
-package Course06;
+package course06;
 
 public class Car {
     private String name;
@@ -9,11 +9,13 @@ public class Car {
         if (increment < 0) {
             System.out.println ("Cannot decrease my speed with this method");
             System.out.println ("Current speed is: " + currentSpeed);
-        } else {
-            if (currentSpeed + increment > 250) {
+        } else if (currentSpeed + increment > 250) {
+            {
                 System.out.println ("Topspeed of " + name + " has been reached: " + topSpeed + " km/h");
                 System.out.println ("Current speed is: " + topSpeed);
             }
+
+        } else {
             currentSpeed += increment;
         }
     }

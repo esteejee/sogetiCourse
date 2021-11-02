@@ -1,4 +1,4 @@
-package Course06;
+package course06;
 
 public class Employee {
     int id;

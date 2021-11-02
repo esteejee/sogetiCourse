@@ -1,4 +1,4 @@
-package Course06;
+package course06;
 
 public class Point {
     private int x;
@@ -9,12 +9,13 @@ public class Point {
     }
 
     public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
         System.out.println ("Parameterized constructor has been used!");
     }
 
-    public void printCoordinates(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public void printCoordinates() {
+        System.out.println ("The x value is " + getX () + " and the y value is "  + getY ());
     }
 
     public int getX() {
