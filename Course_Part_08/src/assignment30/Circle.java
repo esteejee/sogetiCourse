@@ -32,6 +32,6 @@ public class Circle extends Shape {
 
     // ook in de methode de controle op positieve getallen
     public void setRadius(double radius) {
-        this.radius = (!(isPositive (radius)) ? 0 : radius);
+        this.radius = (isPositive (radius) ? radius : 0);
     }
 }

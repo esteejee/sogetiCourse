@@ -41,6 +41,6 @@ public class Rectangle extends Shape {
 
     // ook in de methode de controle op positieve getallen
     public void setHeight(double height) {
-        this.height = (!(isPositive (height)) ? 0 : height);
+        this.height = (isPositive (height) ? height : 0);
     }
 }

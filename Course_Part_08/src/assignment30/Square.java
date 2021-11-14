@@ -28,6 +28,6 @@ public class Square extends Shape {
     }
 
     public void setSide(double side) {
-        this.side = (!(isPositive (side))?0:side);
+        this.side = (isPositive (side)?side:0);
     }
 }
