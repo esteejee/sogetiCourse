@@ -14,7 +14,7 @@ public abstract class Shape {
     public abstract double calculatePerimeter();
 
     public boolean isPositive(double checkValue) {
-        return !(checkValue < 0);
+        return checkValue >= 0;
     }
 
     public String getName() {

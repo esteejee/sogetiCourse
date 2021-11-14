@@ -3,16 +3,11 @@ package assignment30;
 
 public class Circle extends Shape {
     private double radius;
-    final double pi = Math.PI;
 
     // in de constructor al controle op positieve getallen, alleen bij aanmaken object
-    public Circle(String name, double radius) {
+    public Circle(double radius) {
         super ("Circle");
-        if (!(isPositive (radius))) {
-            this.radius = 0;
-        } else {
-            this.radius = radius;
-        }
+        setRadius (radius);
     }
 
     @Override
@@ -22,12 +17,13 @@ public class Circle extends Shape {
 
     @Override
     public double calculateArea() {
-        return pi * radius * radius;
+        //return pi * radius * radius;
+        return Math.PI * radius * radius;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 2.0 * pi * radius;
+        return 2.0 * Math.PI * radius;
     }
 
     public double getRadius() {
@@ -36,10 +32,6 @@ public class Circle extends Shape {
 
     // ook in de methode de controle op positieve getallen
     public void setRadius(double radius) {
-        if (!(isPositive (radius))) {
-            this.radius = 0;
-        } else {
-            this.radius = radius;
-        }
+        this.radius = (!(isPositive (radius)) ? 0 : radius);
     }
 }

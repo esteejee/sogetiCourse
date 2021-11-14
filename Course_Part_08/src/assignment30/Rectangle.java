@@ -5,20 +5,11 @@ public class Rectangle extends Shape {
     private double height;
 
     // in de constructor al controle op positieve getallen, alleen bij aanmaken object
-    public Rectangle(String name, double width, double height) {
+    public Rectangle(double width, double height) {
         super ("Rectangle");
-        if (!(isPositive (width))) {
-            this.width = 0;
-        } else {
-            this.width = width;
-        }
-        if (!(isPositive (height))) {
-            this.height = 0;
-        } else {
-            this.height = height;
-        }
+        setWidth (width);
+        setHeight (height);
     }
-
 
     @Override
     public void draw() {
@@ -41,11 +32,7 @@ public class Rectangle extends Shape {
 
     // ook in de methode de controle op positieve getallen
     public void setWidth(double width) {
-        if (!(isPositive (width))) {
-            this.width = 0;
-        } else {
-            this.width = width;
-        }
+        this.width = (!(isPositive (width)) ? 0 : width);
     }
 
     public double getHeight() {
@@ -54,10 +41,6 @@ public class Rectangle extends Shape {
 
     // ook in de methode de controle op positieve getallen
     public void setHeight(double height) {
-        if (!(isPositive (height))) {
-            this.height = 0;
-        } else {
-            this.height = height;
-        }
+        this.height = (!(isPositive (height)) ? 0 : height);
     }
 }

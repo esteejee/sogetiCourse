@@ -1,10 +1,10 @@
 package assingment31;
 
 public interface Animal {
-    public abstract void animalSound();
+    void animalSound();
 
-    public abstract void run();
+    void run();
 
-    public abstract void sleep();
+    void sleep();
 
 }
