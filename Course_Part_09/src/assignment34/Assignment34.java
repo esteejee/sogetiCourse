@@ -10,7 +10,7 @@ public class Assignment34 {
         } else {
             System.out.println ("the result of (" + number1 + "/" + number2 + ") is " + result);
         }
-        // 2 voorbeelden scheiden
+
         System.out.println ("***********************");
 
         number1 = 18;

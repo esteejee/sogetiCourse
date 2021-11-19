@@ -10,6 +10,7 @@ public class Assignment41 {
     public static void main(String[] args) {
         int wordCount = 0;
         int uppercaseCount = 0;
+
         Path path = Paths.get ("/Users/sjackjansma/MijnDocumenten/Java/JavaFundamentals/Course_Part_09/src/documents/dummy2.txt");
         Path fileName = path.getFileName ();
 

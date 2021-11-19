@@ -7,7 +7,6 @@ public class Assignment33 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner (System.in);
-
         // gebruiken om input en output met decimal point te ondersteunen
         scanner.useLocale (Locale.US);
         Locale.setDefault (new Locale ("GB"));
