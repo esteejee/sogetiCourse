@@ -7,7 +7,7 @@ import java.io.IOException;
 public class assignment35 {
     public static void main(String[] args) {
 
-        try (FileReader reader = new FileReader ("/Users/sjackjansma/MijnDocumenten/Java/JavaFundamentals/Course_Part_09/src/documents/dummy.txt");
+        try (FileReader reader = new FileReader ("Course_Part_09/src/documents/dummy.txt");
              BufferedReader bufferedReader = new BufferedReader (reader)) {
 
             String line;

@@ -43,8 +43,14 @@ public class Assignment39 {
         System.out.println (colorList);
         System.out.println ("__________________________________");
 
-        String color = colorList.get (colorList.indexOf ("Green")); //ik vind dit netter dan: System.out.println ("found the color " + colorList.get (colorList.indexOf ("Green")) + "!");
-        System.out.println ("found the color " + color + "!");
+        //String color = colorList.get (colorList.indexOf ("Green")); //ik vind dit netter dan: System.out.println ("found the color " + colorList.get (colorList.indexOf ("Green")) + "!");
+        boolean isColorInList = colorList.contains ("Green");
+        if (isColorInList) {
+            System.out.println ("found the color Green!");
+        } else {
+            System.out.println ("Green not found");
+        }
+
         System.out.println ("__________________________________");
 
         System.out.println ("Colorlist before sort " + colorList);

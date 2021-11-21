@@ -14,10 +14,10 @@ public class Assignment38 {
         shapesMap.put (6, "Ellipse");
 
         System.out.println (shapesMap);
-        System.out.println (""); // lege regel
+        System.out.println ("______________________");
 
         shapesMap.forEach (
-                (Integer key, String value) -> System.out.println (key + " -> " + value)
+                (key, value) -> System.out.println (key + " -> " + value)
         );
 
         System.out.println ("______________________");
