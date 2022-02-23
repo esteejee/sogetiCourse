@@ -6,7 +6,7 @@ public class Assignment29 {
         SavingsAccount raboSpaarrekening = new SavingsAccount ();
         raboSpaarrekening.deposit (5000);
         raboSpaarrekening.setName ("Rabo spaarrekening");
-        System.out.println (String.format("The yearly interest on your %s is € %d", raboSpaarrekening.getName (), raboSpaarrekening.getAnnualInterest ()));
+        System.out.println (String.format("The yearly interest on your %s is € %.2f", raboSpaarrekening.getName (), raboSpaarrekening.getAnnualInterest ()));
         raboSpaarrekening.setName ("Rabo spaarrekening");
         raboSpaarrekening.printOverview ();
         raboSpaarrekening.withDraw (3000);

@@ -1,14 +1,14 @@
 package assignment29;
 
+
 public class SavingsAccount extends Account {
-    int interest;  // gekozen voor default access modifier (ook methodes), alleen beschikbaar voor deze package. De subclass is nu niet te gebruiken vanuit een andere package.
+    double interest;  // gekozen voor default access modifier (ook methodes), alleen beschikbaar voor deze package. De subclass is nu niet te gebruiken vanuit een andere package.
 
     public SavingsAccount() {
         this.name = name;
         this.balance = 0;
         this.interest = 5;
     }
-
 
     @Override
     void withDraw(int amount) {
@@ -20,8 +20,7 @@ public class SavingsAccount extends Account {
         }
     }
 
-    int getAnnualInterest() {
-        return interest = (balance * interest) / 100;
+    double getAnnualInterest() {
+        return (balance * interest) / 100;
     }
-
 }

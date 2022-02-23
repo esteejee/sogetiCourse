@@ -11,7 +11,7 @@ public class Game {
         this.player2 = player2;
     }
 
-    void getPlayerNameHighestScore() {
+    public String getPlayerNameHighestScore() {
         String resultGame;
         if (player1.getScore () > player2.getScore ()) {
             resultGame = player1.getName ();
@@ -20,14 +20,15 @@ public class Game {
         } else {
             resultGame = "equal score";
         }
-        String str = (resultGame.equals ("equal score") ? String.format ("Score of %s and %s is equal", player1.getName (), player2.getName ()) : String.format ("Player %s has highest score", resultGame));
-        System.out.println (str);
+        return resultGame;
     }
 
     void printScoreBord() {
         System.out.println (String.format ("### Scoreboard of the game %s ###", title));
         System.out.println (String.format ("Player one %s has a score %d", player1.getName (), player1.getScore ()));
         System.out.println (String.format ("Player two %s has a score of %d ", player2.getName (), player2.getScore ()));
+        String str = (getPlayerNameHighestScore ().equals ("equal score") ? String.format ("Score of %s and %s is equal", player1.getName (), player2.getName ()) : String.format ("Player %s has highest score", getPlayerNameHighestScore ()));
+        System.out.println (str);
     }
 
     public String getTitle() {

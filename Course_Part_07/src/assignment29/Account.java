@@ -20,8 +20,15 @@ public class Account {
         return name;
     }
 
+    public int getBalance() {
+        return balance;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
 }

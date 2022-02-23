@@ -5,6 +5,5 @@ public class Assignment28 {
         CheckingAccount myCheckingAccount = new CheckingAccount (5000);
         myCheckingAccount.setName ("Spaarrekening");
         myCheckingAccount.printOverview ();
-
     }
 }

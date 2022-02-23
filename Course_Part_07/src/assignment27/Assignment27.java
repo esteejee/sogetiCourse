@@ -9,7 +9,6 @@ public class Assignment27 {
         player2.setScore (50);
         Game chess = new Game ("Schaken", player1, player2);
         chess.printScoreBord ();
-        chess.getPlayerNameHighestScore ();
 
         Player player3 = new Player ("Jacob");
         player3.setScore (40);
@@ -17,6 +16,5 @@ public class Assignment27 {
         player4.setScore (40);
         Game stratego = new Game ("Stratego", player3, player4);
         stratego.printScoreBord ();
-        stratego.getPlayerNameHighestScore ();
     }
 }
